@@ -1,7 +1,617 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+	<title>Hyphen Labs, LLC - A Team of Microsoft BizTalk Experts</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta charset="UTF-8"/>
+
+	<link href="./CSS/hyphenlabs.css" media="screen" rel="stylesheet" type="text/css"/>
+	<script id="facebook-jssdk"  src="./Scripts/all.js"></script>
+	<script type="text/javascript" async="" src="./Scripts/plusone.js"></script>
+	<script id="twitter-wjs" src="./Scripts/widgets.js"></script>
+	<script type="text/javascript" async="" src="./Scripts/ga.js"></script>
+	<script src="./Scripts/compress.js" type="text/javascript"></script>
+
+	<link href="Images/favi-con.png" rel="shortcut icon" type="image/icon"/>
+	<link href="./CSS/css.css" rel="stylesheet" type="text/css"/>
+	<link href="https://plus.google.com/[HyphenLabs]" rel="publisher"/>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+	
+	<meta name="keywords" content="BizTalk,BizTalk Support,BizTalk B2B,BizTalk EAI,BizTalk AS2,BizTalk EDI,Biztalk edifact,BizTalk Emergency,BizTalk Help,BizTalk ESB,BizTalk Consultant,BizTalk 2004,BizTalk 2006 R2,BizTalk 2009,BizTalk 2010,BizTalk HIPAA,BizTalk HL7,BizTalk SAP,BizTalk MQ"/>
+	<meta name="description" content="Experts BizTalk Consulting.  Our consultants represent the pinnacle of expertise with BizTalk and SharePoint.  We invite you to challenge us."/>
+	   
+	<!-- Sticky Navigation JS  -->
+	<script type="text/javascript">
+		function goToSlide(canvas, slide) {
+			var elem = "#slide-" + slide;
+			canvas.animate({
+				scrollTop: $(elem).offset().top
+			}, 700, 'easeInQuad');
+		}
+
+		$(function () {
+			var canvas = $('html,body');
+			var slides = $('.slide');
+			var navLinks = $(".nav-link");
+			var mainWindow = $(window);
+
+			navLinks.click(function () {
+				var slide = $(this).data("goto-slide");
+				goToSlide(canvas, slide);
+			});
+
+			slides.scrollbeacon({
+				appear: function (event) {
+					var slideNumber = $(event.target).attr('id').replace("slide-", "");
+					// goToSlide(canvas, slideNumber);
+					$('.navigation .nav-link').removeClass("active");
+					$('.navigation .nav-link[data-goto-slide="' + slideNumber + '"]').addClass('active').prev().removeClass('active');
+				}
+			});
+
+			mainWindow.scroll(function () {
+				if ($(this).scrollTop() == 0) {
+					$('.navigation .nav-link').removeClass("active");
+					$('.navigation li[data-goto-slide="1"]').addClass('active');
+				}
+			});
+		})
+
+		$(function () {
+			$(".contact-modal-trigger").on("click", function (e) {
+				e.preventDefault();
+				$("#contact-modal").modal('show');
+			})
+		})
+	</script>
+
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-XXXXX-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+</script>
+
+
+
+	<script type="text/javascript" src="./Scripts/jquery.form-n-validate.js"></script>
+	<style type="text/css">
+		#mc_embed_signup input.mce_inline_error {
+			border-color: #6B0505;
+		}
+
+		#mc_embed_signup div.mce_inline_error {
+			margin: 0 0 1em 0;
+			padding: 5px 10px;
+			background-color: #6B0505;
+			font-weight: bold;
+			z-index: 1;
+			color: #fff;
+		}
+	</style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<div class="header">
+		<div class="content">
+			<div id="logo" style="float: left">
+				<a href="#">
+					<img src="./Images/HyphenLabs-logo.png" alt="HyphenLabs"/>
+				</a>
+			</div>
+			<nav class="pull-right">
+				<ul class="menu pull-right">
+					<li><a href="http://Hyphenlabs.com/">Home</a></li>
+					<li><a href=".\products.html">Products</a></li>
+                    <li><a href="http://blog.Hyphenlabs.com/" target="_blank">Blog</a></li>
+					<li><a href="http://Hyphenlabs.com/#" class="contact-modal-trigger">Contact Us</a></li>
+					<li><a href="https://drive.google.com/folderview?id=0BytyMPXhigQ6X2F3RUFVazg4Mkk&usp=sharing" target="_blank" style="color: #47CBF5">Case Study</a></li>
+	
+				</ul>
+			</nav>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+	 <ul class="navigation">
+		<li class="nav-link active" data-goto-slide="1"><a href="#Introduction">Introduction</a></li>
+		<li class="nav-link" data-goto-slide="2" onclick="sliderTrack(&#39;biztalk_experts&#39;);"><a href="#we-are-biztalk-experts">BizTalk Experts</a></li>
+		<li class="nav-link" data-goto-slide="3" onclick="sliderTrack(&#39;setup_middleware&#39;);"><a href="#setup-middleware">Setup Middleware</a></li>
+		<li class="nav-link" data-goto-slide="4" onclick="sliderTrack(&#39;streamline_integrations&#39;);"><a href="#streamline-integrations">Streamline</a></li>
+		<li class="nav-link" data-goto-slide="5" onclick="sliderTrack(&#39;develop_efficiently&#39;);"><a href="#develop-efficiently">Enable Features</a></li>
+		<li class="nav-link" data-goto-slide="6" onclick="sliderTrack(&#39;biztalk_for_lob&#39;);"><a href="#biztalk-for-lob">BizTalk For LOB</a></li>
+		<li class="nav-link" data-goto-slide="7" onclick="sliderTrack(&#39;training_services&#39;);"><a href="#training-services">Training Services</a></li>
+		<li class="nav-link" data-goto-slide="8" onclick="sliderTrack(&#39;technology_stack&#39;);"><a href="#technology-stack">Technology Stack</a></li>
+		<li class="nav-link" data-goto-slide="9" onclick="sliderTrack(&#39;brands&#39;);"><a href="#clients"> 24 X 7</a></li>
+		<!--  <li class="contact-modal-trigger">Contact</li>  -->
+	</ul>
+
+	<!-- Share Buttons -->
+	<div class="share-buttons" style="float: right; width: 345px;">
+	
+
+		<div style="float: left; width: 105px;">
+			<script src="./Scripts/in.js" type="text/javascript"></script>
+			<script type="IN/Share" data-url="http://Hyphenlabs.com" data-counter="right"></script>
+		</div>
+
+	</div>
+
+	<div class="clearfix"></div>
+
+	<!-- Start Slides -->
+
+	<div class="slide" id="slide-1" data-goto-slide="1" data-stellar-background-ratio="0.5" >
+      
+		<div class="container-1">
+			<span class="heading" style=" font-size: 20px; margin-left: 175px;"><a name="introduction" style="color: #485463"></a></span>
+
+			<p><span class="heading">We Are <span> BIZTALK</span> EXPERTS.</span></p>
+
+                        		
+			<h4 class="left-align-text" >We Handle All EAI & B2B Implementations using BizTalk Server <br/>& Microsoft Technology Stack.</h4>
+		
+
+        <div class="l-sidebar">
+
+				<p class="description left-align-text"> We are Innovative, Unique, Professional and Experts in the world of Application Integration ! <br/><br/>
+					Pioneering the Systems Integrations Using Microsoft BizTalk Server</p>
+				<br>
+			</div>
+
+			<div class="r-sidebar">
+				<img src="./Images/Services-light.png" style="position: absolute; right: 60px;" width="500px">
+			</div>
+
+
+		</div>
+
+		<a class="down-button nav-link" data-goto-slide="2" title="START"><span style="padding-bottom: 5px;">START</span></a>
+	</div>
+	<!--End Slide 1-->
+  
+	<div class="slide" id="slide-2" data-goto-slide="2" data-stellar-background-ratio="0.5">
+		<div class="modal hide fade" id="slide2Modal" style="display: none;">
+			<a data-dismiss="modal" class="close">x</a>
+			<div class="modal-body ">
+
+				<p>Apart from BizTalk, We have enabled our clients with the use of other latest technology in the Microsoft Stack. For Example. UDDI for service discovery, description and composition. SCOM rules and alerts for Monitoring the Production BizTalk Servers. BizTalk360 for BizTalk application monitoring and data governance.
+                  </p>
+
+			</div>
+			<div class="modal-footer">
+				Improve performance, Mitigate Risk, Implement the Right Way
+	   
+			</div>
+		</div>
+		<div class="container-2">
+
+			<p><span class="heading">Lower risk, superior <span>ROI</span></span></p>
+
+			<div class="l-sidebar">
+				<p class="description">We have helped our clients gain the sustainable ROI from their middleware investment. At  the core we believe that you should setup your integration platform one-time for all your needs. This promotes the reusability of services and reduces friction towards applications and data fragmentation across applications. You can leverage your resources and enable seamless cross communication integrations.
+                </p>
+				<br>
+				<p class="popover-btn-container zero-margin">
+					<img src="./Images/settings-icon.png" class="pull-left">
+					<a class="pull-left btn popover-button orange-gradient" data-toggle="modal" href="http://hyphenlabs.com/#slide2Modal" name="we-are-biztalk-experts">READ MORE</a>
+				</p>
+			</div>
+			<br>
+			<br>
+			<div class="r-sidebar">
+				<img src="./Images/capabilities.png" style="position: absolute; right: 60px;" width="580px">
+			</div>
+		</div>
+		<a class="down-button nav-link" data-goto-slide="3" title="START"></a>
+	</div>
+	<!--End Slide 2-->
+
+
+	
+	<div class="slide" id="slide-3" data-goto-slide="3" data-stellar-background-ratio="0.5">
+		<div class="modal hide fade" id="slide3Modal" style="display: none;">
+			<a data-dismiss="modal" class="close">x</a>
+			<div class="modal-body ">
+				<p>
+					<img src="./Images/BizTalkConfiguration.png"></p>
+			</div>
+			<div class="modal-footer">
+				Scalable, Highly Available & Reliable Infrastructure
+			</div>
+		</div>
+		<div class="container-3">
+
+			<p><span class="heading">Setup Your <span>Middleware</span>.</p>
+
+			<div class="l-sidebar">
+				<img src="./Images/Venn-1Green.png" width="300px">
+			</div>
+
+			<div class="r-sidebar">
+
+				<p class="description">Use of right technology is critical for the business success. BizTalk Server is not a technology, but it is a Product comprising of a composite of technology. To make your BizTalk server a competent middleware for your organization, it requires a great deal of expertise and experience.  
+
+                    <br />We have setup BizTalk infrastructure for many clients and each have different budget and different needs from the product. We Guarantee reliability through high availability.
+
+				</p>
+
+				<div class="description zero-padding">
+					<p class="right-align-text popover-btn-container">
+						<img src="./Images/settings-icon.png">
+						<a class="btn popover-button orange-gradient" data-toggle="modal" href="http://hyphenlabs.com/#slide3Modal" name="setup-middleware">SEE EXAMPLE</a>
+					</p>
+				</div>
+
+			</div>
+
+		</div>
+		<a class="down-button nav-link" data-goto-slide="4" title="START"></a>
+	</div>
+	<!--End Slide 3-->
+
+
+	<div class="slide" id="slide-4" data-goto-slide="4" data-stellar-background-ratio="0">
+		<div class="modal hide fade" id="slide4Modal" style="display: none;">
+			<a data-dismiss="modal" class="close">x</a>
+			<div class="modal-body ">
+				<p>
+					<img src="./Images/streamlineinterfaces.png"></p>
+			</div>
+			<div class="modal-footer">
+				STREAMLINE INTERFACES WITH BEST PRACTICES
+			</div>
+		</div>
+		<div class="container-4">
+			<p><span class="heading">STREAMLINE With <span>BEST PRACTICES</span>.</span></p>
+
+			<div class="l-sidebar">
+				<img src="./Images/Venn-2GreenOrange.png" width="300px">
+			</div>
+
+			<div class="r-sidebar">
+
+				<p class="description">	Every Interface is business critical and mostly unique, The Art of transforming your spaghetti connections to the SOA architecture requires a thorough analysis of your business and a deep insight on the right technology.
+                    <br /><br /> have the vast knowledgebase that we have acquired through years of experience in this area, We help our clients in providing the right guidance and setting them up with best practices!
+
+				</p>
+
+				<div class="description zero-padding">
+					<p class="right-align-text popover-btn-container">
+						<img src="./Images/settings-icon.png">
+						<a class="btn popover-button orange-gradient" data-toggle="modal" href="http://hyphenlabs.com/#slide4Modal" name="streamline-integrations">Know More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<a class="down-button nav-link" data-goto-slide="5" title="START"></a>
+	</div>
+	<!--End Slide 4-->
+
+
+	<div class="slide" id="slide-5" data-goto-slide="5" data-stellar-background-ratio="0.5">
+		<div class="modal hide fade" id="slide5Modal" style="display: none;">
+			<a data-dismiss="modal" class="close">x</a>
+			<div class="modal-body ">
+				<br>
+				<div id="myCarousel-b" class="carousel slide" style="">
+					<div class="carousel-inner">
+						<div class="item active ">
+							<img src="./Images/FeaturesCapabilities.png" alt="Feature Capabilities">
+                           <div class="r-sidebar"> <p class="description"> We have implemented numerous patterns for variety of our clients to acommodate their unique needs, Some of the features that we generally use are : Service Mediation, Message Routing, Data Transformation, Event Handling, Service Orchestration and Service Creation & Hosting.
+</p>
+							</div>
+                            
+						</div>
+					
+					</div>
+					<a class="left carousel-control" href="http://hyphenlabs.com/#myCarousel-a" data-slide="prev">‹</a>
+					<a class="right carousel-control" href="http://hyphenlabs.com/#myCarousel-a" data-slide="next">›</a>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="http://apps.facebook.com/terra_app/" target="_blank"><span>BizTalk</span> Capabilities</a>
+			</div>
+		</div>
+
+		<div class="container-5">
+			<p><span class="heading">ENABLE FEATURES <span>LEVERAGE RESOURCES</span>.</span></p>
+
+
+			<div class="l-sidebar">
+				<img src="./Images/venn-external.png"  width="300px">
+			</div>
+
+			<div class="r-sidebar">
+				<p class="description"> You have more than a couple of applications, services, or legacy systems, custom point-to-point integration is painful. It’s way too expensive and time-consuming to build and once in place, creates a complex web of brittle connections that breaks every time you change an endpoint, modify a data structure or change a business process. What you really need is a efficient integration platform that will quickly connect all of your systems and services, whether they reside on-premise or in the cloud. 
+                    <br />
+                    <br />
+                    		We provide the pre-built models to demonstrate the features of the BizTalk Server best applicable to your organization, so Your developers can refer,  learn and re-use the concepts in those models.
+
+                .</p>
+				<div class="description zero-padding">
+					<p class="right-align-text popover-btn-container">
+						<img src="./Images/settings-icon.png">
+						<a class="btn popover-button orange-gradient" data-toggle="modal" href="http://hyphenlabs.com/#slide5Modal" name="develop-efficiently">LEARN MORE..</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<a class="down-button nav-link" data-goto-slide="6" title="START"></a>
+	</div>
+	<!--End Slide 5-->
+
+
+	<div class="slide" id="slide-6" data-goto-slide="6" data-stellar-background-ratio="0.5">
+		<div class="modal hide fade" id="slide6Modal" style="display: none;">
+			<a data-dismiss="modal" class="close">x</a>
+			<div class="modal-body ">
+                <div id="myCarousel-a" class="carousel slide" style="">
+					  <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="./Images/hl7.png" alt="HL7 Integrations" style="width: 590px; height: 300px;">
+                            
+                        </div>
+                        <div class="item">
+                            <img src="./Images/msgformats.png" alt="All Formats" style="width: 590px; height: 300px;">
+                       
+                        </div>
+                    </div>
+					<a class="left carousel-control" href="http://hyphenlabs.com/#myCarousel-a" data-slide="prev">‹</a>
+					<a class="right carousel-control" href="http://hyphenlabs.com/#myCarousel-a" data-slide="next">›</a>
+				</div>
+				
+			</div>
+			<div class="modal-footer">
+				HIPAA, HL7, EDI, SWIFT, FINANCE<span style="float: right; color: white; font-size: 10px; letter-spacing: 1px;">Healthcare, Finance, Retail, Insurance</span>
+			</div>
+		</div>
+		<div class="container-6">
+			<p><span class="heading"> HealthCare,Insurance, <span>Finance...</span></span></p>
+
+			<div class="l-sidebar">
+				<img src="./Images/venn-internal.png"  width="300px">
+			</div>
+
+			<div class="r-sidebar">
+
+				<div class="description">Hyphen Labs has unsurpassed experience and expertise in Finance, Healthcare and Retail systems. We work with several major Hospital Networks, Finance Institutions and Insurance companies. We can help your organization make apposite decisions regarding your business issues and your technical program. This empowerment makes your business much more competitive in today’s challenging healthcare market.
+                    <br /><br />
+                    We mainly help enterprises in defining and standardizing the integrations with different systems including SAP, Active directory, UDDI / SOA Service registry
+</div>
+
+				<div class="description zero-padding">
+					<p class="right-align-text popover-btn-container">
+						<img src="./Images/settings-icon.png">
+						<a class="btn popover-button orange-gradient" data-toggle="modal" href="http://hyphenlabs.com/#slide6Modal" name="biztalk-for-lob">View More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<a class="down-button nav-link" data-goto-slide="7" title="START"></a>
+	</div>
+	<!--End Slide 6-->
+
+
+	<div class="slide" id="slide-7" data-goto-slide="7" data-stellar-background-ratio="0.5">
+		<div class="container-7">
+			<p><span class="heading">Build <span>Expertise</span>.</span></p>
+
+			<div class="l-sidebar">
+				<img src="./Images/venn-all.png" width="350px">
+			</div>
+
+			<div class="r-sidebar">
+				
+				<h4 >EXPERTISE WITH QUALITY TRAINING.
+					
+					<br>
+					<br>
+                    </h4>
+                <p class="description">
+					We not only help you setup BizTalk infrastructure and implement BizTalk applications, But also provide expert 
+                    training to  your developers,to teach them the practical real-world BizTalk skills that they won't find in any class.</p>
+				<div class="description zero-padding">
+					<p class="right-align-text popover-btn-container">
+						<img src="./Images/settings-icon.png">
+						
+					</p>
+				</div>
+			</div>
+		</div>
+		<a class="down-button nav-link" data-goto-slide="8" title="START"></a>
+	</div>
+	<!--End Slide 7-->
+
+
+	<div class="slide" id="slide-8" data-goto-slide="8" data-stellar-background-ratio="0.5">
+		<div class="container-8">
+			<p><span class="heading">Technology <span>Stack</span>.</span></p>
+
+			<section>
+
+				<div class="diagram">
+					<img src="./Images/techstack.png" width="430px">
+				</div>
+
+				<div class="dotnet">
+					<p class="description">Web Services, WCF, Services, Custom applications, Elasticity.</p>
+				</div>
+
+				<div class="sqlserver">
+					<p class="description">
+                        Tune SQL Server databases for best performance. Connect with myriad systems and databases easily. 
+					</p>
+				</div>
+
+				<div class="appfabric">
+					<p class="description">Cloud Services, Windows Azure, Connnection to SAAS based ERP & CRM, IAAS, PAAS. </p>
+				</div>
+
+				<div class="sharepoint">
+					<p class="description">Enterprise Systems Integration, ECM, SAP, PeopleSoft, Lawson.</p>
+				</div>
+
+                <div class="vs">
+					<p class="description">Integrated development environment.</p>
+				</div>
+
+				<div class="popover-btn description">
+					<p class="right-align-text popover-btn-container">
+						<img src="./Images/settings-icon.png">
+						<a href="http://blog.hyphenlabs.com" target="_blank" class="btn popover-button orange-gradient" name="technology-stack">READ THE FULL STORY</a>
+					</p>
+				</div>
+			</section>
+		</div>
+ 	<a class="down-button nav-link" data-goto-slide="9" title="START"></a>
+	</div>
+	<!--End Slide 8-->
+
+
+	
+	<div class="slide" id="slide-9" data-goto-slide="9" data-stellar-background-ratio="0.5">
+		<div class="container-9">
+			<p><span class="heading">We are <span>24x7</span> shop.</span></p>
+
+			<section>
+
+				<div class="diagram">
+					<img src="./Images/industries.png" width="430px">
+				</div>
+
+				<div class="callus">
+                    <h4>Featured Video</h4>
+                    <br>
+                    <object width="400" height="215" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0">
+                        <param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" />
+                        <param name="src" value="//www.youtube.com/v/j5UZgoS7xaM?hl=en_US&amp;version=3&amp;rel=0" />
+                        <param name="allowfullscreen" value="true" />
+                        <embed width="445" height="250" type="application/x-shockwave-flash" src="//www.youtube.com/v/j5UZgoS7xaM?hl=en_US&amp;version=3&amp;rel=0" allowFullScreen="true" allowscriptaccess="always" allowfullscreen="true" /></object>
+                    <p class="right-align-text popover-btn-container">
+                        <a href="http://www.youtube.com/user/hyphenlabs/videos" target="_blank" class="btn popover-button orange-gradient" name="technology-stack">View More</a>
+                    </p>
+                </div>
+
+			</section>
+		</div>
+		
+         <a class="down-button up-button nav-link" data-goto-slide="1" title="START"></a>
+		<div class="home-page-footer-wrapper">
+			<div class="footer">
+				<div class="content">
+
+					<div class="col-1">
+						<ul class="pull-left zero-margin">
+							<li>Company</li>
+							<li><a href="http://blog.hyphenlabs.com/" target="_blank">Blog</a></li>
+							<li><a href="./terms-of-use.html">Terms of Use</a></li>
+							<li><a href="./privacy-policy.html">Privacy Policy</a></li>
+						</ul>
+
+						<ul class="pull-right">
+							<li>Follow us</li>
+							<li><a href="http://twitter.com/Hyphenlabs" target="_blank">Twitter</a></li>
+							<li><a href="http://www.facebook.com/Hyphenlabs" target="_blank">Facebook</a></li>
+						</ul>
+					</div>
+
+					<div class="col-2">
+						<p class="copyright right-align-text">© 2013. Hyphen Labs LLC</p>
+					</div>
+					<div class="clearfix">&nbsp;</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--End Slide 10-->
+
+
+
+
+
+	<div class="modal hide fade" id="modalThankyou" style="display: none;">
+		<a data-dismiss="modal" class="close">x</a>
+		<div class="modal-body ">
+			<div style="padding: 20px;">
+				<h4>Thank you writing to us. We'll contact you shortly.</h4>
+			</div>
+		</div>
+	</div>
+	<div class="contact-container modal hide fade" id="contact-modal" style="display: none;">
+      <a data-dismiss="modal" class="close">x</a>
+      <h4 class="heading-wrapper">Contact Us</h4>
+      <div class="modal-body">
+        <!-- Begin MailChimp Signup Form -->
+                <div class="contact-details" >
+              <h3>Hyphen Labs LLC</h3>
+              <br />
+              <div class="address"> 7208 Abbey Road,
+                  <br />Columbia, MD</div>
+              
+
+              <div class="phone"><i class="fa fa-phone-square orange-font-color" ></i>  1-312-806-0919</div><br><br />
+              <div class="Email"><i class="fa fa-envelope orange-font-color" ></i>  biztalk@hyphenlabs.com</div> 
+
+          </div>
+
+        <!--End mc_embed_signup-->
+      </div>
+      
+    </div>
+
+
+	 <!--  Facebook Like Button -->
+	<div id="fb-root"></div>
+	<script type="text/javascript">
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1659744901260171";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+
+
+
+		function sliderTrack(result) {
+			if (result == "biztalk_experts") {
+				_gaq.push(['_trackEvent', 'appMethodology', 'click']);
+			}
+			else if (result == "build_fan_base") {
+				_gaq.push(['_trackEvent', 'fanBase', 'click']);
+			}
+			else if (result == "engage_richly") {
+				_gaq.push(['_trackEvent', 'engageRichly', 'click']);
+			}
+			else if (result == "drive_actions") {
+				_gaq.push(['_trackEvent', 'driveActions', 'click']);
+			}
+			else if (result == "draw_intelligence") {
+				_gaq.push(['_trackEvent', 'drawIntelligence', 'click']);
+			}
+			else if (result == "who_is_it_for") {
+				_gaq.push(['_trackEvent', 'whoisitFor', 'click']);
+			}
+			else if (result == "technology_stack") {
+				_gaq.push(['_trackEvent', 'technologyStack', 'click']);
+			}
+			else if (result == "backend_preview") {
+				_gaq.push(['_trackEvent', 'backendPreview', 'click']);
+			}
+			else {
+
+			}
+		}
+	</script>
+
 </body>
 </html>

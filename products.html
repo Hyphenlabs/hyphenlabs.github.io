@@ -1,0 +1,322 @@
+﻿
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+    <title>Hyphen Labs, LLC - A Team of Microsoft BizTalk Experts</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta charset="UTF-8"/>
+
+    <link href="./CSS/hyphenlabs.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script id="facebook-jssdk"  src="./Scripts/all.js"></script>
+    <script type="text/javascript" async="" src="./Scripts/plusone.js"></script>
+    <script id="twitter-wjs" src="./Scripts/widgets.js"></script>
+    <script type="text/javascript" async="" src="./Scripts/ga.js"></script>
+    <script src="./Scripts/compress.js" type="text/javascript"></script>
+
+    <link href="Images/favi-con.png" rel="shortcut icon" type="image/icon"/>
+    <link href="./CSS/css.css" rel="stylesheet" type="text/css"/>
+    <link href="https://plus.google.com/[HyphenLabs]" rel="publisher"/>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <meta name="keywords" content="BizTalk,BizTalk Support,BizTalk B2B,BizTalk EAI,BizTalk AS2,BizTalk EDI,Biztalk edifact,BizTalk Emergency,BizTalk Help,BizTalk ESB,BizTalk Consultant,BizTalk 2004,BizTalk 2006 R2,BizTalk 2009,BizTalk 2010,BizTalk HIPAA,BizTalk HL7,BizTalk SAP,BizTalk MQ"/>
+    <meta name="description" content="Experts BizTalk Consulting.  Our consultants represent the pinnacle of expertise with BizTalk and SharePoint.  We invite you to challenge us."/>
+
+    <!-- Sticky Navigation JS  -->
+    <script type="text/javascript">
+        function goToSlide(canvas, slide) {
+            var elem = "#slide-" + slide;
+            canvas.animate({
+                scrollTop: $(elem).offset().top
+            }, 700, 'easeInQuad');
+        }
+
+        $(function () {
+            var canvas = $('html,body');
+            var slides = $('.slide');
+            var navLinks = $(".nav-link");
+            var mainWindow = $(window);
+
+            navLinks.click(function () {
+                var slide = $(this).data("goto-slide");
+                goToSlide(canvas, slide);
+            });
+
+            slides.scrollbeacon({
+                appear: function (event) {
+                    var slideNumber = $(event.target).attr('id').replace("slide-", "");
+                    // goToSlide(canvas, slideNumber);
+                    $('.navigation .nav-link').removeClass("active");
+                    $('.navigation .nav-link[data-goto-slide="' + slideNumber + '"]').addClass('active').prev().removeClass('active');
+                }
+            });
+
+            mainWindow.scroll(function () {
+                if ($(this).scrollTop() == 0) {
+                    $('.navigation .nav-link').removeClass("active");
+                    $('.navigation li[data-goto-slide="1"]').addClass('active');
+                }
+            });
+        })
+
+        $(function () {
+            $(".contact-modal-trigger").on("click", function (e) {
+                e.preventDefault();
+                $("#contact-modal").modal('show');
+            })
+        })
+    </script>
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-XXXXX-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+
+
+    <script type="text/javascript" src="./Scripts/jquery.form-n-validate.js"></script>
+    <style type="text/css">
+        #mc_embed_signup input.mce_inline_error {
+            border-color: #6B0505;
+        }
+
+        #mc_embed_signup div.mce_inline_error {
+            margin: 0 0 1em 0;
+            padding: 5px 10px;
+            background-color: #6B0505;
+            font-weight: bold;
+            z-index: 1;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="content">
+        <div id="logo" style="float: left">
+            <a href="#">
+                <img src="./Images/HyphenLabs-logo.png" alt="HyphenLabs"/>
+            </a>
+        </div>
+        <nav class="pull-right">
+            <ul class="menu pull-right">
+                <li><a href="http://Hyphenlabs.com/">Home</a></li>
+                <li><a href=".\products.html">Products</a></li>
+                <li><a href="http://blog.Hyphenlabs.com/" target="_blank">Blog</a></li>
+                <li><a href="http://Hyphenlabs.com/#" class="contact-modal-trigger">Contact Us</a></li>
+                <li><a href="https://drive.google.com/folderview?id=0BytyMPXhigQ6dnc5SDhuZkx3dk0&usp=sharing" target="_blank" style="color: #47CBF5">Case Study</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+
+
+<div class="container">
+    <h1 class="stylish-h1">“Our Products & Services”</h1>
+    <div class="product pull-left">
+
+        <div class="itembar">
+            <div class="item">
+                <h3 class="orange-font-color">BizTalk Server Developer Package</h3><h5 > - Built on VMware Workstation</h5>
+                <hr>
+                <div class="left">
+
+
+                    <h5 class="blue-font-color">Benefits</h5>
+                    <p><i class="fa  fa-check-square fa-lg" style="color: #808080"></i> Automated Installation and Configuration. </p>
+                    <p><i class="fa fa-rocket fa-lg" style="color: #808080"></i> Set up your development environment right away. </p>
+                    <p><i class="fa fa-arrow-circle-o-up -o fa-lg" style="color: #808080"></i> Speed up Development, Reduce Frustration. </p>
+                    <p><i class="fa fa-clock-o fa-lg" style="color: #FF6600"></i> Save days of worth of effort researching, Installing and Configuring the BizTalk. Save Time & Money. </p>
+                </div>
+
+                <div class="right">
+
+                    <h5 class="blue-font-color">Features</h5>
+                    <p><i class="fa fa-eye-slash fa-lg" style="color: #808080"></i> Effortless setup of BizTalk environment. </p>
+                    <p><i class="fa fa-hand-o-right fa-lg" style="color: #FF6600"></i> Choose Development Type - HL7, HIPAA or SWIFT. </p>
+                    <p><i class="fa fa-refresh fa-lg" style="color: #808080"></i> Reset BizTalk environment to desired state. </p>
+                    <p><i class="fa fa-cogs fa-lg" style="color: #808080"></i> BizTalk and all dependent components are installed perfectlty. </p>
+                </div>
+
+                <div class="right">
+
+                    <img src="Images/Biztalk%20Dev%20Pack.png" width="60%" style="padding-left:50px;" />
+
+                    <a style="float:left; padding-left:100px;" href="mailto:biztalk@hyphenlabs.com" target="_blank">
+                    <h6 class="orange-font-color">$499 Only! Email for more info..</h6>
+                    </a>
+                </div>
+            </div>
+
+            <div class="space"><hr /></div>
+            <h3 class="ribbon"><span>Open Source Projects</span></h3>
+            <br><br>
+            <hr />
+
+            <div class="item">
+                <h3 class="orange-font-color">BizTalk Migration Manager</h3>
+                <hr>
+
+                <div class="left" style="text-align:center">
+            <span class="fa-stack fa-3x" style="color: #6600CC;">
+              <i class="fa fa-square fa-stack-2x"></i>
+              <i class="fa fa-terminal fa-stack-1x fa-inverse "></i>
+            </span>
+                    <h5>Automated Installation and Configuration. </h5>
+                </div>
+
+                <div class="right" style="text-align:center">
+           
+            <span class="fa-stack fa-3x" style="color: #66CCFF;">
+              <i class="fa fa-square-o fa-stack-2x"></i>
+              <i class="fa fa-github-alt fa-stack-1x"></i>
+            </span>
+                    <h5>Powered by GitHub</h5>
+                </div>
+
+                <div class="right" style="text-align:center">
+           
+            <span class="fa-stack fa-3x" style="color: #808080;">
+               <i class="fa fa-square-o fa-stack-2x"></i>
+              <i class="fa fa-cloud-download fa-stack-1x"></i>
+
+            </span>
+                    <h5 class="orange-font-color">Download Here</h5>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- End L-Sidebar -->
+
+        <!-- End R-Sidebar -->
+
+    </div>
+    <!-- End Team -->
+    <div class="clearfix">
+        &nbsp;
+    </div>
+</div>
+<!-- End Container -->
+
+
+
+<div class="modal hide fade" id="modalThankyou" style="display: none;">
+    <a data-dismiss="modal" class="close">x</a>
+    <div class="modal-body ">
+        <div style="padding: 20px;">
+            <h4>Thank you writing to us. We'll contact you shortly.</h4>
+        </div>
+    </div>
+</div>
+<div class="contact-container modal hide fade" id="contact-modal" style="display: none;">
+    <a data-dismiss="modal" class="close">x</a>
+    <h4 class="heading-wrapper">Contact Us</h4>
+    <div class="modal-body">
+        <!-- Begin MailChimp Signup Form -->
+        <div class="contact-details" >
+            <h3>Hyphen Labs LLC</h3>
+            <br />
+            <div class="address"> 7208 Abbey Road,
+                <br />Columbia, MD</div>
+
+
+            <div class="phone"><i class="fa fa-phone-square orange-font-color" ></i>  1-312-806-0919</div><br><br />
+            <div class="Email"><i class="fa fa-envelope orange-font-color" ></i>  biztalk@hyphenlabs.com</div>
+
+        </div>
+
+        <!--End mc_embed_signup-->
+    </div>
+
+</div>
+
+
+<div class="footer">
+    <div class="content">
+
+
+        <div class="col-1">
+            <ul class="pull-left zero-margin">
+                <li>Company</li>
+                <li><a href="http://blog.hyphenlabs.com/" target="_blank">Blog</a></li>
+                <li><a href="http://hyphenlabs.com/terms-of-use">Terms of Use</a></li>
+                <li><a href="http://hyphenlabs.com/privacy-policy">Privacy Policy</a></li>
+            </ul>
+
+            <ul class="pull-right">
+                <li>Follow us</li>
+                <li><a href="http://twitter.com/Hyphenlabs" target="_blank">Twitter</a></li>
+                <li><a href="http://www.facebook.com/Hyphenlabs" target="_blank">Facebook</a></li>
+            </ul>
+        </div>
+
+        <div class="col-2">
+            <p class="copyright right-align-text">© 2013. Hyphen Labs LLC</p>
+        </div>
+        <div class="clearfix">&nbsp;</div>
+
+    </div>
+</div>
+
+
+<!--  Facebook Like Button -->
+<div id="fb-root"></div>
+<script type="text/javascript">
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=121";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+
+
+    function sliderTrack(result){
+        if (result == "app_methodology"){
+            _gaq.push(['_trackEvent', 'appMethodology', 'click']);
+        }
+        else if (result == "build_fan_base"){
+            _gaq.push(['_trackEvent', 'fanBase', 'click']);
+        }
+        else if (result == "engage_richly"){
+            _gaq.push(['_trackEvent', 'engageRichly', 'click']);
+        }
+        else if (result == "drive_actions"){
+            _gaq.push(['_trackEvent', 'driveActions', 'click']);
+        }
+        else if (result == "draw_intelligence"){
+            _gaq.push(['_trackEvent', 'drawIntelligence', 'click']);
+        }
+        else if (result == "who_is_it_for"){
+            _gaq.push(['_trackEvent', 'whoisitFor', 'click']);
+        }
+        else if (result == "technology_stack"){
+            _gaq.push(['_trackEvent', 'technologyStack', 'click']);
+        }
+        else if (result == "backend_preview"){
+            _gaq.push(['_trackEvent', 'backendPreview', 'click']);
+        }
+        else{
+
+        }
+    }
+</script>
+
+
+
+</body>
+</html>
